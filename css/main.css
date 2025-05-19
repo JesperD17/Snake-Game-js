@@ -1,0 +1,77 @@
+:root {
+    --main-color: #7fad7f;
+    --secondary-color: #A2D04A;
+    --background-shade: rgba(0, 0, 0, 0.7);
+}
+
+body {
+    margin: 0;
+}
+
+.headerItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+    position: relative;
+    gap: 10px;
+    background: var(--main-color);
+}
+
+.headerItems img {
+    height: 50px;
+}
+
+.scoreWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.field {
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.field img {
+    display: flex;
+    object-fit: cover;
+    width: -webkit-fill-available;
+    -webkit-user-drag: none;
+}
+
+.startOverlay, .lostOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--background-shade);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lostOverlay {
+    display: none;
+}
+
+.fieldInnerWrapper {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.userSnake {
+    transition: top 1s ease 0s;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

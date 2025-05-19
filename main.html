@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Snake game!</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="headerItems">
+        <img src="favicon.png" class="logo">
+
+        <div class="title">Welcome!</div>
+
+        <div class="scoreWrapper">
+            <div class="count">000</div>
+            <i class='bx bxl-apple'></i>
+        </div>
+
+        <button class="resetBtn" onclick="resetGame()">Reset</button>
+    </div>
+
+    <div class="field">
+        <div class="fieldInnerWrapper">
+            <img src="background.jpg">
+            <div class="userSnake">aa</div>
+            <div class="startOverlay">Press W, A, S, D to start the game!</div>
+            <div class="lostOverlay">You lost the game! Click any button to retry.</div>
+        </div>
+    </div>
+
+    <div class="footerItems">
+
+    </div>
+</body>
+</html>
+<script src="./js/main.js"></script>
